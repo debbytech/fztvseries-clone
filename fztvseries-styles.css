@@ -414,7 +414,7 @@ img {
 .carousel-track {
   display: flex;
   gap: 20px;
-  animation: scroll-left 30s linear infinite;
+  animation: scroll-left 40s linear infinite;
   padding: 10px 0;
 }
 
@@ -446,7 +446,7 @@ img {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-130%);
   }
 }
 
@@ -530,9 +530,25 @@ body {
   font-size: 1.1rem;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 4px 15px rgba(85, 76, 77, 0.3);
+  text-align: center;
 }
 
-.link-button:hover {
+/* Generic link button */
+.download-page-link-button {
+  display: block;
+  background-color: #a0d0f7;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 15px rgba(85, 76, 77, 0.3);
+  text-align: center;
+}
+.link-button:hover ,
+.download-page-link-button:hover {
   background-color: #0673b2;
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 6px 20px rgba(85, 76, 77, 0.5);
@@ -599,6 +615,202 @@ body {
   }
 }
 
+.Imkm5 {
+  flex-flow: column;
+    background: none 0% 0% / auto repeat scroll padding-box border-box rgb(246, 246, 246) !important;
+    color: rgb(0, 0, 0) !important;
+    padding: 0px 14.0509px !important;
+    font-style: normal !important;
+    font-variant: normal !important;
+    font-size: 16px !important;
+    line-height: 1 !important;
+    font-family: calibri !important;
+    text-align: center;
+}
 
+.show-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 15px;
+  margin: 20px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.show-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
 
+.show-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+  
+}
+
+.show-details {
+  flex: 1;
+  font-family: Calibri;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.show-details h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.show-details a {
+  text-decoration: none;
+  color: #0077cc;
+  transition: color 0.3s ease;
+}
+
+.show-details a:hover {
+  color: #005fa3;
+  text-decoration: underline;
+}
+
+.show-details p {
+  margin: 5px 0;
+}
+
+.season-list {
+  display: grid;
+  width: 80%;
+  gap: 15px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  place-self: center;
+  
+}
+
+.season-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.season-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.season-item a {
+  text-decoration: none;
+  color: #0077cc;
+  font-family: Calibri;
+  font-size: 0.95rem;
+  font-weight: 600;
+  display: block;
+}
+
+.season-item a:hover {
+  color: #005fa3;
+}
+
+.episodes {
+  width: 100%;
+  margin: 20px 0;
+  padding: 15px;
+  font-family: Calibri;
+  color: #333;
+}
+
+.episodes h2 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.episode-card {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  background: #fff;
+  padding: .25rem;
+  gap: 10px;
+  justify-content: center; 
+  
+}
+
+.episode-card:hover {
+  transform: scale(1.02);
+}
+
+.thumbnail {
+  flex: 0 1 auto;
+  align-content: center;
+}
+
+.thumbnail img {
+  display: block; /* removes inline whitespace */
+  image-rendering: auto; /* default, for smooth scaling */
+}
+
+.episode-details {
+  padding: .25rem;
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  
+}
+
+.episode-details h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.links a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #007bff;
+  font-size: 0.9rem;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.air-date {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 0.25rem 0;
+}
+
+.description {
+  font-size: 0.95rem;
+  margin: 0.25rem 0;
+}
+
+.credits {
+  font-size: 0.8rem;
+  color: #666;
+  margin: .25rem 0;
+}
+
+.links {
+  margin: 4px 0;
+}
